@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Bài tập phân vùng tương đương</title>
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<section class="container-fluid h-100">
+		<div class="container h-100">
+			<div class="row h-100">
+				<div class="col col-5 h-100">
+					<div class="content tab form-control">
+						<div class="content-head py-1">
+							<div class="tab-btns">
+								<button class="tab-btn btn active"data-target="#test-form">Kiểm tra khung giờ</button>
+								<button class="tab-btn btn" data-target="#event-form">Thêm sự kiện</button>
+							</div>
+						</div>
+						<div class="content-body">
+							<form id="test-form"action="#" class="tab-content form-control">
+								<legend>Kiểm tra khung giờ</legend>
+								<div class="input-group my-1">
+									<div class="col-4">
+										<label for="">Thời gian:</label>
+									</div>
+									<div class="col-8">
+										<input type="time"id="time-test" class="form-control">
+									</div>
+								</div>
+								<div class="input-group my-1 justify-content-center">
+									<button class="btn btn-outline-primary">Kiểm tra
+									</button>
+								</div>
+							</form>
+							<form id="event-form"action="#" class="tab-content form-control">
+								<legend>Thêm sự kiện</legend>
+								<div class="input-group my-1">
+									<div class="col-4">
+										<label for="">Thời gian đầu:</label>
+									</div>
+									<div class="col-8">
+										<input type="time"id="time-start" class="form-control">
+									</div>
+								</div>
+								<div class="input-group my-1">
+									<div class="col-4">
+										<label for="">Thời gian thúc:</label>
+									</div>
+									<div class="col-8">
+										<input type="time"id="time-end" class="form-control">
+									</div>
+								</div>
+								<div class="input-group my-1">
+									<div class="col-4">
+										<label for="">Giá trị:</label>
+									</div>
+									<div class="col-8">
+										<input type="text" id="time-value"class="form-control">
+									</div>
+								</div>
+								<div class="input-group my-1 justify-content-center">
+									<button class="btn btn-outline-primary">Thêm</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col col-7 h-100">
+					<div class="tab content form-control">
+						<div class="content-head py-1">
+							<div class="tab-btns">
+								<button class="tab-btn btn active"data-target="#test-content">Lịch sử kiểm tra</button>
+								<button class="tab-btn btn" data-target="#event-content">Lịch sự kiện</button>
+							</div>
+						</div>
+						<div class="content-body">
+							<div id="event-content"class="tab-content form-control" >
+								<div class="event-content-head">
+									<div class="event-row row border-bottom">
+										<div class="event-col border-end col col-4">
+											<span class="start">Thời gian bắt đầu</span>
+										</div>
+										<div class="event-col col col-4">
+											<span class="end">Thời gian kết thúc</span>
+										</div>
+										<div class="event-col border-start col col-4">
+											<span class="value">Giá trị</span>
+										</div>
+									</div>
+								</div>
+								<div class="event-content-body"></div>
+							</div>
+							<div id="test-content"class="tab-content form-control">
+								<div class="test-content-head">
+									<div class="test-row row border-bottom">
+										<div class="test-col border-end col col-3">
+											<span class="id">Test case Id</span>
+										</div>
+										<div class="test-col col col-4">
+											<span class="time">Thời gian nhập</span>
+										</div>
+										<div class="test-col border-start col col-5">
+											<span class="result">Kết quả</span>
+										</div>
+									</div>
+								</div>
+								<div class="test-content-body"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript"src="./js/index.js"></script>
+</body>
+</html>
+
+
