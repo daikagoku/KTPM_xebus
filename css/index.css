@@ -1,0 +1,40 @@
+body{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+.tab-btn{
+	border: 0.1em solid transparent;
+}
+.tab-btn.active{
+	border: 0.1em solid var(--bs-blue);
+}
+
+.tab-content{
+	display: none;
+}
+.tab-content.active{
+	display: block;
+}
+
+
+.content{
+	max-height: 100%;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.content-body{
+	max-height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+
+
+.test-content-head{
+	font-weight: bolder;
+}
+.event-content-head{
+	font-weight: bolder;
+}
